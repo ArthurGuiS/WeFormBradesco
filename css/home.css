@@ -1,0 +1,102 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+    --white: #fff;
+    --black: #000000;
+    --pink: #FF5678;
+    --blue: #35E6E9;
+    --light-blue: #C0EBF4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.content {
+    display: grid;
+    grid-template-areas: 
+        ". . . . ."
+        ". hero . form ."
+        ". hero . form ."
+        ". . . . ."
+    ;
+    gap: 85px;
+}
+
+aside {
+    grid-area: hero;
+}
+
+aside h1 {
+    color: var(--black);
+    font-size: 64px;
+    font-weight: 500;
+}
+
+aside h1 span {
+    color: var(--pink);
+}
+
+main {
+    grid-area: form;
+
+    width: 600px;
+    height: 520px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: var(--white);
+    padding: 47px 57px;
+}
+
+main h2 {
+    max-width: 430px;
+    max-height: 85px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+main h2 span {
+    color: var(--pink);
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions a {
+    height: 55px;
+    font-size: 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions a:first-child {
+    background-color: var(--blue);
+    margin-top: 54px;
+}
+
+.actions a:nth-child(2) {
+    background-color: var(--pink);
+    margin-top: 48px;
+}
+
+main footer p {
+    font-size: 16px;
+    margin-top: 80px;
+}
+
+main footer a {
+    margin-top: 10px;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    color: var(--black);
+}
