@@ -48,6 +48,7 @@ main {
     border: 1px solid rgba(0, 0, 0, 0.15);
     background-color: var(--white);
     padding: 47px 57px;
+    position: relative;
 }
 
 main h2 {
@@ -88,6 +89,17 @@ main h2 span {
     margin-top: 48px;
 }
 
+main header {
+    display: flex;
+    align-items: center;
+    gap: 0 18px;
+}
+
+main header i {
+    font-size: 18px;
+    color: var(--pink);
+}
+
 main footer p {
     font-size: 16px;
     margin-top: 80px;
@@ -99,4 +111,58 @@ main footer a {
     display: block;
     text-align: center;
     color: var(--black);
+}
+
+main form {
+    margin-top: 18px;
+}
+
+main form label {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: block;
+}
+
+main form input, main form select {
+    width: 489px;
+    height: 55px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+
+}
+
+main form select {
+    appearance: none;
+}
+
+main form .select-div {
+    position: relative;
+}
+
+main form .select-div::after {
+    content: "\f107";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    font-size: 22px;
+    position: absolute;
+    z-index: 1;
+    top: 16px;
+    right: 16px;
+    color: var(--blue);
+}
+
+main form .points {
+    position: relative;
+}
+
+main form input + button {
+    position: absolute;
+    right: -40px;
+    top: calc(27px + 25px);
+    background-color: transparent;
+    border: none;
+    color: var(--blue);
+    font-size: 24px;
+    cursor: pointer;
 }
